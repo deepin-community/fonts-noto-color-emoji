@@ -1,0 +1,21 @@
+From: Jeremy Bicha <jbicha@debian.org>
+Date: Mon, 28 Sep 2020 17:49:50 -0400
+Subject: Make build more verbose
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 82b29c4..be9dd37 100644
+--- a/Makefile
++++ b/Makefile
+@@ -20,7 +20,7 @@ LDFLAGS = -lm `pkg-config --libs cairo`
+ 
+ PNGQUANT = pngquant
+ PYTHON = python3
+-PNGQUANTFLAGS = --speed 1 --skip-if-larger --quality 85-95 --force
++PNGQUANTFLAGS = --speed 1 --skip-if-larger --quality 85-95 --force --verbose
+ BODY_DIMENSIONS = 136x128
+ IMOPS := -size $(BODY_DIMENSIONS) canvas:none -compose copy -gravity center
+ 

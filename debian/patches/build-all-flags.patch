@@ -1,0 +1,21 @@
+From: Jeremy Bicha <jbicha@ubuntu.com>
+Date: Wed, 2 May 2018 13:31:12 -0400
+Subject: build all flags
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 4d1b9b5..3429694 100644
+--- a/Makefile
++++ b/Makefile
+@@ -78,7 +78,7 @@ SELECTED_FLAGS = AC AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ \
+ 
+ ALL_FLAGS = $(basename $(notdir $(wildcard $(FLAGS_SRC_DIR)/*.png)))
+ 
+-FLAGS = $(SELECTED_FLAGS)
++FLAGS = $(ALL_FLAGS)
+ 
+ FLAG_NAMES = $(FLAGS:%=%.png)
+ FLAG_FILES = $(addprefix $(FLAGS_DIR)/, $(FLAG_NAMES))

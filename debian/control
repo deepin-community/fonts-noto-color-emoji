@@ -1,0 +1,36 @@
+Source: fonts-noto-color-emoji
+Section: fonts
+Priority: optional
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Uploaders: Yao Wei (魏銘廷) <mwei@lxde.org>, Jeremy Bicha <jbicha@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               fonttools,
+               imagemagick,
+               libcairo2-dev,
+               libpng-dev,
+               pkg-config,
+               pngquant,
+               python3-nototools (>= 0.2.13),
+               zopfli,
+Standards-Version: 4.5.0
+Homepage: https://www.google.com/get/noto/help/emoji/
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-noto-color-emoji.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-noto-color-emoji
+
+Package: fonts-noto-color-emoji
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+Description: color emoji font from Google
+ Noto is a collection of font families, each visually harmonized across
+ scripts.
+ .
+ The name "Noto" is short for "No Tofu", describing the aim of covering
+ all living Unicode scripts.
+ .
+ Tofu (豆腐) is Japanese jargon for unicode replacement character "�"
+ (U+FFFD) often displayed as replacement for unassigned or unknown
+ characters.
+ .
+ This package contains the color emoji font used on "stock" Android devices
+ such as the Google Pixel.

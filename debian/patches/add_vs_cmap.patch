@@ -1,0 +1,22 @@
+From: Jeremy Bicha <jbicha@debian.org>
+Date: Sun, 29 Oct 2017 18:27:28 -0400
+Subject: add_vs_cmap
+
+Debian's nototools drop the .py extension from add_vs_cmap
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index c60ae04..4960dd5 100644
+--- a/Makefile
++++ b/Makefile
+@@ -36,7 +36,7 @@ SMALL_METRICS := -S
+ ADD_GLYPHS = add_glyphs.py
+ ADD_GLYPHS_FLAGS = -a emoji_aliases.txt
+ PUA_ADDER = map_pua_emoji.py
+-VS_ADDER = add_vs_cmap.py # from nototools
++VS_ADDER = add_vs_cmap # from nototools
+ 
+ EMOJI_SRC_DIR ?= png/128
+ FLAGS_SRC_DIR := third_party/region-flags/png

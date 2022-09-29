@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	# The build requires a VIRTUAL_ENV variable 🤷
+	# sequence check isn't working
+	dh_auto_build -- \
+		PNGQUANT=/usr/bin/pngquant \
+		VIRTUAL_ENV=true \
+		BYPASS_SEQUENCE_CHECK=true \
+		NotoColorEmoji.ttf
+
+override_dh_install:
+	dh_install NotoColorEmoji.ttf /usr/share/fonts/truetype/noto
+
+override_dh_clean:
+	dh_clean
+	rm -f *pyc
+	rm -rf __pycache__
+	rm -rf third_party/color_emoji/__pycache__
