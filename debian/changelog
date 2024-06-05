@@ -1,3 +1,39 @@
+fonts-noto-color-emoji (2.042-1) unstable; urgency=medium
+
+  * New upstream release
+    - Update flag for Martinique
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Thu, 30 Nov 2023 11:34:59 -0500
+
+fonts-noto-color-emoji (2.041-1) unstable; urgency=medium
+
+  * New upstream release (LP: #2045043)
+    - This major update introduces support for the Unicode 15.1 standard
+    https://blog.emojipedia.org/googles-emoji-15-1-support-in-noto-color-emoji/
+  * Bump Standards-Version to 4.6.2
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Tue, 28 Nov 2023 14:59:40 -0500
+
+fonts-noto-color-emoji (2.038-1) unstable; urgency=medium
+
+  * New upstream release (LP: #1989626)
+    - This major update introduces support for the Unicode 15 standard
+      https://blog.emojipedia.org/whats-new-in-unicode-15-0/
+  * Bump minimum nototools
+  * Bump Standards-Version to 4.6.1
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Fri, 16 Sep 2022 07:19:16 -0400
+
+fonts-noto-color-emoji (2.034-1) unstable; urgency=medium
+
+  * New upstream release
+    - This major update introduces support for the Unicode 14 standard
+      https://blog.emojipedia.org/google-emoji-14-0-changelog/
+      https://emojipedia.org/google/android-12l/
+  * debian/control: Bump minimum fonttools and nototools
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 21 Nov 2021 12:45:02 -0500
+
 fonts-noto-color-emoji (2.028-1) unstable; urgency=medium
 
   * New upstream release
